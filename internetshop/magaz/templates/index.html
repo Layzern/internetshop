@@ -1,4 +1,16 @@
 <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+    * {
+         font-family: Inter;
+    }
+
+    h1 {
+         color: white;
+         padding: 0px;
+         margin: 0;
+         }
     img {
          max-width: 300px;
          max-height: 300px;
@@ -6,25 +18,58 @@
 
     .product {
        display: flex;
+       border: 2px purple solid;
+       margin-top: 10px;
+       border-radius: 10px;
+       padding: 10px;
+    }
+
+    .heading {
+         display: flex;
+         align-items: center;
+    }
+
+    a {
+         margin-left: 10px;
+         }
+
+    h2 {
+         color: purple;
+    }
+
+    .logo {
+    background-color: purple;
+    padding: 10px;
+    border-radius: 10px;
     }
 </style>
 
-<h1 style="font-family: Arial">Layzern</h1>
+<div class="heading">
+    <div class="logo">
+        <h1>Layzern</h1>
+    </div>
 
     <a href="/">Главная</a>
     <a href="/products">Товары</a>
     <a href="/discounts">Акции</a>
 
+</div>
     <div class="product">
       <img src="https://hatiko.ru/wa-data/public/shop/products/88/31/3188/images/332/332.700.jpg">
-      <h2>PlayStation 5</h2>
-      <p>PlayStation 5 — игровая приставка, разработанная и выпускаемая Sony Interactive Entertainment. PlayStation 5 является представительницей семейства игровых консолей PlayStation и преемницей PlayStation 4.
+      <div>
+            <h2>PlayStation 5</h2>
+            <p>PlayStation 5 — игровая приставка, разработанная и выпускаемая Sony Interactive Entertainment. PlayStation 5 является представительницей семейства игровых консолей PlayStation и преемницей PlayStation 4.
     В отличие от своей предшественницы, PlayStation 5 вместо жёсткого диска использует модифицированный твердотельный накопитель (SSD) — включающий алгоритм сжатия и декомпрессии Oodle Kraken и систему кодирования текстур Oodle Texture.
-    Новая подсистема ввода/вывода позволяет значительно улучшить общую производительность консоли — по заявления ведущего архитектора Марка Черни, декомпрессор Kraken эквивалентен по мощности 9 ядрам Zen 2. Также SSD теперь может быть использован в качестве виртуальной ОЗУ — таким образом, PS5 может располагать большим объёмом оперативной памяти, нежели заявленные 16 ГБ. Устройство включает кастомный APU от AMD, который поддерживает технологию трассировки лучей, вывод изображения с разрешением 4K и частотой кадров до 120 Гц.</p>
+          Новая подсистема ввода/вывода позволяет значительно улучшить общую производительность консоли — по заявления ведущего архитектора Марка Черни, декомпрессор Kraken эквивалентен по мощности 9 ядрам Zen 2. Также SSD теперь может быть использован в качестве виртуальной ОЗУ — таким образом, PS5 может располагать большим объёмом оперативной памяти, нежели заявленные 16 ГБ. Устройство включает кастомный APU от AMD, который поддерживает технологию трассировки лучей, вывод изображения с разрешением 4K и частотой кадров до 120 Гц.</p>
+       </div>
+       <button>Купить</button>
     </div>
 
 <div class="product">
-      <img src="https://cdn.citilink.ru/cyVyBWD2H6DkDywVSnGfbcpM1EHvw0rjOy_1T-BEt2o/resizing_type:fit/gravity:sm/width:400/height:400/plain/product-images/c3f1bbb5-72e0-4002-a157-6bd8ddb7a5ff.jpg">
-      <h2>Samsung Galaxy S24 Ultra</h2>
-      <p>Samsung Galaxy S24 Ultra 5G – это флагман 2024 года, при производстве которого компания использовала все свои передовые технологии. Здесь разместились мощнейший процессор, большой экран с фантастической контрастностью и камера с впечатляющим разрешением. В комплекте идёт электронное перо S-Pen, упрощающее взаимодействие с устройством</p>
+          <img src="https://cdn.citilink.ru/cyVyBWD2H6DkDywVSnGfbcpM1EHvw0rjOy_1T-BEt2o/resizing_type:fit/gravity:sm/width:400/height:400/plain/product-images/c3f1bbb5-72e0-4002-a157-6bd8ddb7a5ff.jpg">
+    <div>
+          <h2>Samsung Galaxy S24 Ultra</h2>
+          <p>Samsung Galaxy S24 Ultra 5G – это флагман 2024 года, при производстве которого компания использовала все свои передовые технологии. Здесь разместились мощнейший процессор, большой экран с фантастической контрастностью и камера с впечатляющим разрешением. В комплекте идёт электронное перо S-Pen, упрощающее взаимодействие с устройством</p>
     </div>
+    <button>Купить</button>
+</div>
