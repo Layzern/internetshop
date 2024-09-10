@@ -1,86 +1,6 @@
-<style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ {% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}"/>
 
-
-    * {
-         font-family: Inter;
-    }
-
-    h1 {
-         color: white;
-         padding: 0px;
-         margin: 0;
-         }
-    img {
-         max-width: 300px;
-         max-height: 300px;
-    }
-
-    .product {
-       display: flex;
-       border: 2px purple solid;
-       margin-top: 20px;
-       border-radius: 10px;
-       padding: 10px;
-       background-color: white;
-       width: 60%;
-    }
-
-    .heading {
-         display: flex;
-         align-items: center;
-         padding-bottom: 10px;
-         justify-content: center;
-    }
-
-    a {
-         margin-right: 30px;
-         text-decoration: none;
-         color: black;
-         font-size: 22px;
-         }
-
-    a:hover {
-         color:purple;
-    }
-
-
-    h2 {
-         color: purple;
-    }
-
-    .logo {
-    background-color: purple;
-    padding: 10px;
-    border-radius: 10px;
-    }
-
-
-    .navigation {
-        margin-left: 100px;
-    }
-
-    .productList {
-         background-color: #f6f6f6;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         width: 60%;
-    }
-
-    button {
-         height: 50px;
-         width: 100%;
-         background-color: white;
-         border: 2px solid #d6d6d6;
-         padding: 0;
-         border-radius: 10px;
-    }
-
-    .priceSection {
-          width: 500px;
-    >
-</style>
 
 <div class="heading">
     <div class="logo">
@@ -103,7 +23,10 @@
     В отличие от своей предшественницы, PlayStation 5 вместо жёсткого диска использует модифицированный твердотельный накопитель (SSD) — включающий алгоритм сжатия и декомпрессии Oodle Kraken и систему кодирования текстур Oodle Texture.
           Новая подсистема ввода/вывода позволяет значительно улучшить общую производительность консоли — по заявления ведущего архитектора Марка Черни, декомпрессор Kraken эквивалентен по мощности 9 ядрам Zen 2. Также SSD теперь может быть использован в качестве виртуальной ОЗУ — таким образом, PS5 может располагать большим объёмом оперативной памяти, нежели заявленные 16 ГБ. Устройство включает кастомный APU от AMD, который поддерживает технологию трассировки лучей, вывод изображения с разрешением 4K и частотой кадров до 120 Гц.</p>
        </div>
-       <button>Купить</button>
+       <div class="priseSection">
+         <h3>54.990₽</h3>
+         <button>Купить</button>
+    </div>
     </div>
 
 <div class="product">
