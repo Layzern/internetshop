@@ -1,41 +1,37 @@
- {% load static %}
+{% load static %}
 <link rel="stylesheet" href="{% static 'style.css' %}"/>
-
 
 <div class="heading">
     <div class="logo">
-        <h1>Layzern</h1>
+        <h1 class="logoText">НетМаркет</h1>
     </div>
 
     <div class="navigation">
-
-        <a href="/">Главная</a>
-    <a href="/products">Товары</a>
-    <a href="/discounts">Акции</a>
+        <a class="navlink" href="/">Главная</a>
+        <a class="navlink" href="/products">Товары</a>
+        <a class="navlink" href="/discounts">Акции</a>
     </div>
 </div>
-     {% for product in products %}
-   <div class="product">
-      <img src="https://hatiko.ru/wa-data/public/shop/products/88/31/3188/images/332/332.700.jpg">
-      <div>
-            <h2>{{ product.name }}</h2>
-            <p>{{ product.description }}</p>
-       </div>
-       <div class="priseSection">
-         <h3>{{ product.price }}</h3>
-         <button>Купить</button>
-    </div>
-    </div>
 
+
+<div class="productList">
+
+    {% for product in products %}
 <div class="product">
-          <img src="https://cdn.citilink.ru/cyVyBWD2H6DkDywVSnGfbcpM1EHvw0rjOy_1T-BEt2o/resizing_type:fit/gravity:sm/width:400/height:400/plain/product-images/c3f1bbb5-72e0-4002-a157-6bd8ddb7a5ff.jpg">
+    <img class="productPreview" src="{{ product.image_url }}">
     <div>
-          <h2>{{ product.name }}</h2>
-          <p>{{ product.description }}</p>
+        <a href="/product/{{ product.id }}">
+            <h2 class="textGreen">{{ product.name }}</h2>
+        </a>
+        <p>{{ product.description }}</p>
     </div>
-    <div class="priseSection">
-         <h3>{{ product.price }}</h3>
-         <button>Купить</button>
+    <div class="priceSection">
+        <h3>{{ product.price }} ₽</h3>
+        <a href="/payment/{{ product.id }}">
+            <button>Купить</button>
+        </a>
     </div>
 </div>
-     {% endfor %}
+    {% endfor %}
+
+</div>
