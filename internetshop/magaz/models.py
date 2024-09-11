@@ -8,6 +8,8 @@ class Product(models.Model):
     price = models.IntegerField()
     image_url = models.CharField(max_length=256)
 
+    # Вес в граммах
+    weight = models.IntegerField(null=True)
 
 
 def __str__(self):

@@ -28,4 +28,14 @@
     {{ product.description }}
   </p>
 
+  <h1>Характеристики:</h1>
+
+   {% if product.weight %}
+  <div class="charRow">
+    <p>
+        Вес: {{ product.weight }} грамм
+    </p>
+
+  </div>
 </div>
+{% endif %}

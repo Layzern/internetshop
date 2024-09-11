@@ -14,6 +14,18 @@ def home(request):
 
 def view_product(request, id):
     product = Product.objects.filter(id=id).first()
+    charTable = []
+
+    characterstics = [
+        [product.weight, 'Вес']
+    ]
+
+    if product.weight:
+        charTable.append([
+            'Вес',
+            f'{product.weight} грамм'
+        ])
+
     return  render(request, 'product.html', {
        'product' : product
     })
