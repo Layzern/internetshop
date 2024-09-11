@@ -100,6 +100,10 @@
      flex-direction: row;
     }
 
+    .productInfo {
+        margin-top: 5%;
+    }
+
     .productDetails {
        width: 70%;
        margin-left: auto;

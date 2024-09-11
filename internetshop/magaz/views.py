@@ -12,5 +12,5 @@ def home(request):
     })
 
 
-def view_product(request):
+def view_product(request, id):
     return  render(request, 'product.html')
