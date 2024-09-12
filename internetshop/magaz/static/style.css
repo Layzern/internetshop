@@ -148,6 +148,12 @@ a {
     font-size: 20px;
 }
 
+.createReviewForm input {
+      border-radius: 10px;
+      border: none;
+      border: 2px solid #a6a6a6;
+}
+
 .inputElement {
     padding: 5px;
     border-radius: 10px;
