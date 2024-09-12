@@ -15,6 +15,7 @@ def home(request):
 def view_product(request, id):
     product = Product.objects.filter(id=id).first()
     print(product.review_set.all)
+    reviews = product.review_set.all()
     charTable = []
 
     characterstics = [
@@ -28,5 +29,6 @@ def view_product(request, id):
         ])
 
     return  render(request, 'product.html', {
-       'product' : product
+       'product' : product,
+       'reviews' : reviews,
     })
