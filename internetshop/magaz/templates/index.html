@@ -3,7 +3,7 @@
 
 <div class="heading">
     <div class="logo">
-        <h1 class="logoText">НетМаркет</h1>
+        <h1 class="logoText">Layzern</h1>
     </div>
 
     <div class="navigation">
@@ -20,7 +20,7 @@
 <div class="product">
     <img class="productPreview" src="{{ product.image_url }}">
     <div>
-        <a href="/product/1 {{ product.id }}">
+        <a href="/product/{{ product.id }}">
             <h2 class="textGreen">{{ product.name }}</h2>
         </a>
         <p>{{ product.description }}</p>
